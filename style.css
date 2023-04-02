@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100dvh;
+    width: 100dvw;
+    padding: 1rem;
+}
+
+.noscriptmsg {
+    position: relative;
+}
+
+.noscriptmsg img {
+    width: 100%;
+    height: auto;
+    opacity: 0.3;
+}
+
+.noscriptmsg .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    color: white;
+}
+
+.card {
+    width: 47rem;
+    max-width: 100%;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 2rem;
+    padding: 2rem 1rem;
+}
+
+.search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search input {
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    height: 6rem;
+    border-radius: 3rem;
+    flex: 1;
+    font-size: 1.8rem;
+    padding: 0 1.5rem;
+}
+
+.weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.weather_icon {
+    width: 17rem;
+}
+
+.weather h1 {
+    font-size: 8rem;
+    font-weight: 500;
+}
+
+.weather h2 {
+    font-size: 4.5rem;
+    font-weight: 400;
+    margin-top: -1rem;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0rem;
+    margin-top: 5rem;
+    width: 80%;
+    max-width: 90%;
+}
+
+.col {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.col img {
+    width: 4rem;
+    margin-right: 1rem;
+}
+
+.col p {
+    font-size: 1.4rem;
+}
+
+p.humidity,
+p.wind {
+    font-size: 2.8rem;
+    margin-top: -0.6rem;
+}
+
+.swal-overlay .swal-overlay--show-modal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swal-modal {
+    max-width: 90%;
+}
